@@ -1,68 +1,48 @@
-# 📄 A-TownChain Whitepaper v2.1.0
-![Version](https://img.shields.io/badge/version-2.1.0-a259ff?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-feature--complete-00ffcc?style=for-the-badge)
-![Chain](https://img.shields.io/badge/Chain--ID-9000-00d1ff?style=for-the-badge)
-![Tests](https://img.shields.io/badge/tests-23%2F23-brightgreen?style=for-the-badge)
-![Size](https://img.shields.io/badge/whitepaper-80KB-a259ff?style=for-the-badge)
+# atc-whitepaper
 
-> *"We don't fork. We build."* — ShivaCore
+> **Offizielles Whitepaper v2.1.0**
 
-**Vollständiges Whitepaper** des A-TownChain Ökosystems — 99 Kapitel, 80 KB,
-kompiliert aus allen Quellen: GitHub-Repositories, Architektur-Dokumente, Standards, Issue-Tracker, Roadmap und Session-Daten.
+[![Layer](https://img.shields.io/badge/Layer-L0-purple)](https://github.com/A-TownChain-Okosystems)
+[![KAI-OS](https://img.shields.io/badge/KAI--OS-v2.0.0-blue)](https://github.com/A-TownChain-Okosystems/a-townchain-os/blob/main/docs/kai-os-wiki.md)
+[![Org](https://img.shields.io/badge/Org-A--TownChain--Okosystems-green)](https://github.com/A-TownChain-Okosystems)
 
-## 📋 Kapitel-Übersicht
-1. Executive Summary
-2. Vision & Mission
-3. Gesamt-Architektur
-4. ATCLang — Proprietäre Programmiersprache
-5. ShivaOS — Dezentrales Betriebssystem
-6. ShivaConsensus — Hybrid PoH+PoS+PoW
-7. Blockchain-Kern & ATCoin
-8. Wallet & Kryptographie (ECDSA secp256k1)
-9. Smart Contract System (10 Contracts)
-10. ATC Token Standards (8300/9000/9900)
-11. API Gateway & Netzwerk (Port 4000)
-12. Shivamon — NFT Gaming Ökosystem
-13. Franchise Factory
-14. Gemini AI Integration (BYOK)
-15. Multi-Node Testnet
-16. Security Audit v2.1.0 (10 Lücken geschlossen)
-17. ATCLang Security Analyzer (15 Checks, ATC-SEC-0001)
-18. Tokenomics & Wirtschaft
-19. Repository-Übersicht (21 Repos)
-20. Protokoll-Standards ATC-0001–0008
-21. ShivaOS Standards ATS-1000–1007
-22. Entwicklungs-Issues v2.1.0–v3.0.0
-23. Roadmap
-24. Rechtliches & Lizenz
-
-## 📊 Statistik
-| Metrik | Wert |
-|--------|------|
-| Whitepaper-Größe | 80 KB |
-| Kapitel | 99 |
-| GitHub-Repos | 21 |
-| Wiki-Seiten | 47+ |
-| Quelldateien | 300+ |
-| Tests | 23/23 ✅ |
-| Security-Fixes | 10 |
-| ATCLang-Security-Checks | 15 |
-| Chain-ID | 9000 |
-
-## 🔗 Links
-| Ressource | URL |
-|-----------|-----|
-| **Haupt-Repo** | https://github.com/A-TownChain-Okosystems/a-townchain-os |
-| **ATCLang** | https://github.com/A-TownChain-Okosystems/atclang |
-| **ShivaOS** | https://github.com/A-TownChain-Okosystems/shivaos-kernel |
-| **Standards** | https://github.com/A-TownChain-Okosystems/atc-standards |
-| **Contracts** | https://github.com/A-TownChain-Okosystems/atc-contracts |
-| **Shivamon** | https://github.com/A-TownChain-Okosystems/shivamon |
-| **Franchise** | https://github.com/A-TownChain-Okosystems/franchise-factory |
-| **OS-Wiki** | https://github.com/A-TownChain-Okosystems/a-townchain-os-wiki |
-| **Organisation** | https://github.com/A-TownChain-Okosystems |
-
-## → [Whitepaper lesen](WHITEPAPER.md)
 
 ---
-*© 2026 ShivaCore | A-TownChain-Okosystems | v2.1.0*
+
+## 📦 Teil des A-TownChain Ökosystems
+
+**Org:** [A-TownChain-Okosystems](https://github.com/A-TownChain-Okosystems)
+**Haupt-Repo:** [a-townchain-os](https://github.com/A-TownChain-Okosystems/a-townchain-os)
+**KAI-OS Wiki (31 Kapitel):** [→ docs/kai-os-wiki.md](https://github.com/A-TownChain-Okosystems/a-townchain-os/blob/main/docs/kai-os-wiki.md)
+**Alle Repos:** [→ ECOSYSTEM.md](https://github.com/A-TownChain-Okosystems/a-townchain-os/blob/main/ECOSYSTEM.md)
+
+---
+
+## 🔗 Abhängigkeiten
+
+**Nutzt:** — (Basis-Modul)
+
+**Wird genutzt von:**
+— (End-Modul)
+
+---
+
+## 🗺️ Alle Repos
+
+| Repo | Layer | Beschreibung |
+|------|-------|-------------|
+| [a-townchain-os](https://github.com/A-TownChain-Okosystems/a-townchain-os) | `L2–L4` | Einziges Haupt-Repo — KAI-OS Core, AI, Blockchain |
+| [atc-kernel](https://github.com/A-TownChain-Okosystems/atc-kernel) | `L2` | ShivaOS Microkernel, IPC, ATCFS, Consensus |
+| [atcnet](https://github.com/A-TownChain-Okosystems/atcnet) | `L5` | P2P Netzwerk-Stack, Kademlia DHT, Bootstrap Node |
+| [atc-gateway](https://github.com/A-TownChain-Okosystems/atc-gateway) | `L7` | API Gateway :4000, Circuit-Breaker, Rate-Limit |
+| [atclang](https://github.com/A-TownChain-Okosystems/atclang) | `L2–L4` | ATCLang v0.3.0, proprietäre Sprache (Lexer, Parser, VM) |
+| [atc-contracts](https://github.com/A-TownChain-Okosystems/atc-contracts) | `L4/L11` | Smart Contracts: ATC-8300, ATC-9000, ATC-9900, Bridge |
+| [atc-shivamon](https://github.com/A-TownChain-Okosystems/atc-shivamon) | `L12` | NFT Gaming: Battle Engine, Breeding, Marketplace |
+| [atc-franchise](https://github.com/A-TownChain-Okosystems/atc-franchise) | `L10/L8` | Business DAO: Vault, Revenue-Share, Royalty (ATC-9900) |
+| [atc-ui](https://github.com/A-TownChain-Okosystems/atc-ui) | `L10` | Neon Dashboard: Wallet, Explorer, Shivamon, AI Chat |
+| [atc-standards](https://github.com/A-TownChain-Okosystems/atc-standards) | `L0` | Protokoll-Standards: ATC-0001–0009 + ATS-1000–1007 |
+| [atc-whitepaper](https://github.com/A-TownChain-Okosystems/atc-whitepaper) | `L0` | Offizielles Whitepaper v2.1.0 |
+
+---
+
+*[A-TownChain-Okosystems](https://github.com/A-TownChain-Okosystems) · v2.0.0 · Stand: 2026-06-09*
